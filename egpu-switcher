@@ -395,8 +395,8 @@ function switch() {
 	fi
 
 	if [ ${mode} = "internal" ]; then
-		print_info "Create symlink ${green}${xfile}${blank} -> ${xfile_internal}"
-		ln -sf ${xfile_internal} ${xfile}
+	  print_info "Remove symlink ${green}${xfile}${blank}"
+		rm -f ${xfile}
 		return
 	fi
 
