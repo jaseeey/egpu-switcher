@@ -1,5 +1,12 @@
 # egpu-switcher
 
+This repository is a fork of [hertg/egpu-switcher](https://github.com/hertg/egpu-switcher) and modified to work with Ubuntu 20.04.
+
+The main difference is when you switch to the internal configuration, the symlink is simply removed to use the default xorg configuration when the external graphics card is not in use. This is to address the issues outlined here:
+- https://askubuntu.com/questions/1231824/fuzzy-graphics-after-upgrading-to-ubuntu-20-04
+- https://askubuntu.com/questions/1231002/graphical-glitches-after-updating-from-19-10-to-20-04-on-dell-xps-9370
+- https://askubuntu.com/questions/1230804/deskop-shows-green-dots-and-skip-some-letter-after-upgrading-from-ubuntu-19-10-t
+
 > **Disclaimer**\
 > Works with **NVIDIA** as well as **AMD** cards.\
 > Tested on Ubuntu, Arch and many other distros.
